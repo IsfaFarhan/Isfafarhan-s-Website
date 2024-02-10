@@ -12,8 +12,6 @@ img{
     border: 1px;
     border-radius: 10px;
 }
-.body::after {
-    background-color: rgba(232, 47, 47);}
 
 body{
     min-height: 100vh;
@@ -27,10 +25,13 @@ body{
 
 .header{
     position: relative;
-    z-index: 1;
+    z-index: 3;
     margin: auto;
     font-size:xx-large;
     top: 80px;
+}
+h2 a{
+    text-decoration: none;
 }
 .top, .bot{
     position: sticky;
@@ -41,9 +42,9 @@ body{
 
 .top{
     top: 0;
+    box-shadow: 0px 5px 20px 1px #5f6874;
 }
 .bot{
-    flex-grow: 0;
     bottom: 0;
 }
 
@@ -52,7 +53,7 @@ body{
 }
 .shadow{
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .shadow2{
@@ -84,7 +85,6 @@ body{
 
 .thumbnails{
     display: flex;
-    position:relative;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -98,11 +98,12 @@ body{
 
 .front{
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 p{
     font-size: 20px;
+    margin-top: 10px;
 }
 
 footer{
@@ -110,54 +111,83 @@ footer{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 576px) {
+.hover1 a:hover{
+    border-radius: 10px;
+    box-shadow: 7px -7px 20px 0px #c4c6ca;
+}
+
+.hover2 a:hover{
+    border-radius: 10px;
+    box-shadow: -7px -7px 20px 0px #c4c6ca;
+}
+@media screen and (max-width: 992px) {
     img{
         width: 200px;
         height: 200px;
     }
-
     body{
+        max-height: auto;
         display: flex;
         flex-flow: column nowrap;
         background-color: #1e1e1e;
         background-image: url(img/imghome/IF\ logo2_IF\ logo\ large.png);
         background-repeat: no-repeat;
-        background-position: bottom right;}
-
-    .header{
-            position: relative;
-            z-index: 1;
-            margin: auto;
-            font-size:xx-large;
-            top: 80px;
-        }
-
+        background-position: center;
+       
+    }
     .top, .bot{
-            position: sticky;
-            background-color: #252B33;
-            height: 3rem;
-            width: 576px;
-        }
-        
+        position: sticky;
+        background-color: #252B33;
+        height: 3rem;
+        width: auto;
+        z-index: 3;
+         }   
+
     .top{
-            top: 0;
+        top:0
         }
     .bot{
-            flex-grow: 0;
-            bottom: 0;
+        bottom: 0;
         }
 
-    .shadow2{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-     
+    .header{
+        top: 40px
+        }
     
-}
+    .nav{
+        position: relative;
+        padding: 50px 0;
+        flex-grow: 1;
+        }
+        
+        .back1, .back2, .back3, .back4{
+            position: relative;
+            width: 0px;
+            height: 0px;
+            border: 0px;
+        }
+        
+        .thumbnails{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            top: 20px;
+            
+        }
+        
+        .contact, .work, .gallery, .about{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column nowrap;
+            align-items: center;
+            padding: 10px;
+            
+        }
+        
+        .front{
+            position: relative;
+            
 
-/* @media screen and (max-width: 992px) {
-    img{
-        width: 500px;
-        height: 500px;
-    }
-} */
+}
+}
