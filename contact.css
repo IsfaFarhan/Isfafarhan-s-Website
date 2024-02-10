@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    color: #898A8C;
+    scroll-behavior: smooth;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #131519;
+    background-image: url(img/imghome/IF\ logo2_IF\ logo\ large.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;}
+
+main{
+    margin: 2rem;
+    grid-area: mn;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 400px 100px;
+    gap: 1rem;
+}
+.header, .formarea, .socmed{
+    display: grid;
+    place-content: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.formarea{
+    display: flex;
+    align-items: top;}
+
+input{
+    min-width: 400px;
+    border-radius: 5px;
+    margin: 0.5rem 0rem 1rem 0rem;
+    padding: 0.3rem;
+}
+textarea{
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 5px;
+    margin: 0.5rem 0rem 1rem 0rem;
+    padding: 0.3rem;
+}
+button{
+    padding: 3px;
+    background-color: #131519;
+    border-radius: 3px;
+    display: grid;
+    font-size: large;
+    
+}
+.socmed{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    background-color: white;
+    border-radius: 50%;
+
+}
+.nav, a{
+    text-decoration: none;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display: grid;
+    place-content: center;
+    font-size: x-large;
+    padding: 10px;
+    
+}
+
+.nav a:hover{
+    color: whitesmoke;
+    box-shadow: 0px 5px 20px 1px #5f6874;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+.top, .bot{
+    position: sticky;
+    background-color: #252B33;
+    height: 3rem;
+    width: auto;
+}
+
+.top{
+    top: 0;
+    box-shadow: 0px 5px 20px 1px #5f6874;
+}
+.bot{
+    bottom: 0;
+}
+
+footer{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 557px){
+    input{
+        min-width: 300px;
+        border-radius: 5px;
+        margin: 0.5rem 0rem 1rem 0rem;
+        padding: 0.3rem;
+    }
+    textarea{
+        min-width: 300px;
+        min-height: 200px;
+        border-radius: 5px;
+        margin: 0.5rem 0rem 1rem 0rem;
+        padding: 0.3rem;
+    }
+}
