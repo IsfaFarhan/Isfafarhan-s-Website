@@ -187,7 +187,11 @@ footer{
         
         .front{
             position: relative;
-            
-
 }
+        p{
+            font-size: 20px;
+            margin-top: -15px;
+            margin-bottom: 15px;
+}
+
 }
