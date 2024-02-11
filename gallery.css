@@ -44,20 +44,23 @@ figcaption{
     padding: 0.5rem;
 }
 
+h3{
+    padding-left: 11px;
+}
+
 .section:first-child{
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
     place-content: center;
 }
-
 .nav, a{
     text-decoration: none;
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
     place-content: center;
-    font-size: x-large;
+    font-size: large;
     padding: 10px;
     
 }
@@ -151,7 +154,7 @@ footer{
         grid-column-start: 1;
         grid-column-end: 3;
         place-content: center;
-        font-size: x-large;
+        font-size: large;
         padding: 10px;
         
     }
@@ -211,7 +214,7 @@ footer{
         grid-column-start: 1;
         grid-column-end: 1;
         place-content: center;
-        font-size: x-large;
+        font-size: large;
         padding: 10px;
         
     }

@@ -78,7 +78,7 @@ img{
     grid-column-end: 1;
     display: grid;
     place-content: center;
-    font-size: x-large;
+    font-size: large;
     padding: 10px;
     
 }

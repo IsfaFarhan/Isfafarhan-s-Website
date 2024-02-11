@@ -51,13 +51,17 @@ figcaption{
     place-content: center;
 }
 
+h3{
+    padding-left: 11px;
+}
+
 .nav, a{
     text-decoration: none;
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
     place-content: center;
-    font-size: x-large;
+    font-size: large;
     padding: 10px;
     
 }
@@ -151,7 +155,7 @@ footer{
         grid-column-start: 1;
         grid-column-end: 3;
         place-content: center;
-        font-size: x-large;
+        font-size: large;
         padding: 10px;
         
     }
@@ -211,7 +215,7 @@ footer{
         grid-column-start: 1;
         grid-column-end: 1;
         place-content: center;
-        font-size: x-large;
+        font-size: large;
         padding: 10px;
         
     }
